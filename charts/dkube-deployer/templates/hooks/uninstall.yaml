@@ -30,8 +30,7 @@ spec:
         securityContext:
           privileged: true
         volumeMounts:
-          -
-            mountPath: /root/.dkube/dkube.ini
+          - mountPath: /root/.dkube/dkube.ini
             name: dkube-config
             subPath: dkube.ini
         {{- if eq .Values.wipedata "yes" }}
