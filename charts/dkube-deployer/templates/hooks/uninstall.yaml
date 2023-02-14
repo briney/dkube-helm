@@ -40,7 +40,6 @@ spec:
         {{- end }}
       serviceAccountName: dkube-deployer-sa
       volumes:
-        -
-          configMap:
+        - configMap:
             name: dkube-config
           name: dkube-config
